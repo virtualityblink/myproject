@@ -10,7 +10,7 @@ data_path = "data/users.json"
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://my-project-api-e7me.onrender.com"
+        "https://myproject-1-xdev.onrender.com"
     ],
     allow_credentials=False,
     allow_methods=["*"],
