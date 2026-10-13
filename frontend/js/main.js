@@ -14,8 +14,6 @@ let users = [];
 async function getUsers() {
     const response = await fetch("https://my-project-api-e7me.onrender.com/getusers");
     users = await response.json();
-
-    console.log(users)
 };
 getUsers();
 
