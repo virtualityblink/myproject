@@ -1,23 +1,23 @@
-let users = [
-    {id: 1, name: "John", age: 25, phone: "85823456"},
-    {id: 2, name: "Bob", age: 27, phone: "65121356"},
-    {id: 3, name: "Erika", age: 29, phone: "09080787"},
-    {id: 4, name: "Sem", age: 31, phone: "12368652"},
-    {id: 5, name: "Deen", age: 33, phone: "31232131"},
-    {id: 6, name: "Bobby", age: 35, phone: "34543543"},
-    {id: 7, name: "Jo", age: 37, phone: "99222867"},
-    {id: 8, name: "Kas", age: 39, phone: "22228678"}
-];
+// let users = [
+//     {id: 1, name: "John", age: 25, phone: "85823456"},
+//     {id: 2, name: "Bob", age: 27, phone: "65121356"},
+//     {id: 3, name: "Erika", age: 29, phone: "09080787"},
+//     {id: 4, name: "Sem", age: 31, phone: "12368652"},
+//     {id: 5, name: "Deen", age: 33, phone: "31232131"},
+//     {id: 6, name: "Bobby", age: 35, phone: "34543543"},
+//     {id: 7, name: "Jo", age: 37, phone: "99222867"},
+//     {id: 8, name: "Kas", age: 39, phone: "22228678"}
+// ];
 
-// let users = [];
+let users = [];
 
-// async function getUsers() {
-//     const response = await fetch("http://127.0.0.1:8000/getusers");
-//     users = await response.json();
+async function getUsers() {
+    const response = await fetch("https://my-project-api-e7me.onrender.com/getusers");
+    users = await response.json();
 
-//     console.log(users)
-// };
-// getUsers();
+    console.log(users)
+};
+getUsers();
 
 const input = document.getElementById("search");
 const list = document.getElementById("list");
